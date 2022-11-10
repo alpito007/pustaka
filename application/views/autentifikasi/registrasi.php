@@ -9,12 +9,13 @@
                         <div class="col-lg">
                             <div class="p-5">
                                 <div class="text-center">
-                                    <h1 class="h4 text-gray-900 mb-4">Halaman Login!!</h1>
+                                    <h1 class="h4 text-gray-900 mb4">Halaman Login!!</h1>
                                 </div>
                                 <?= $this->session->flashdata('pesan'); ?>
                                 <form class="user" method="post" action="<?= base_url('autentifikasi'); ?>">
-                                    <div class="form-group">
-                                         <input type="text" class="form-control form-control-user" value="<?= set_value('email'); ?>" id="email" placeholder="Masukkan Alamat Email" name="email">
+                                    <div class="form-group"> <input type="text" class="form-control form-control-user" value="<?=
+                                                                                                                                set_value('email'); ?>" id="email" placeholder="Masukkan Alamat 
+Email" name="email">
                                         <?= form_error(
                                             'email',
                                             '<small class="text-danger pl-3">',
